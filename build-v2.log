@@ -1,0 +1,70 @@
+[0m
+> build · z-ai/glm-5.2
+[0m
+[0m→ [0mRead build-spec-v2.md
+[0m
+[0m$ [0mls -la /opt/data/cemex-content/ && mkdir -p /opt/data/cemex-content/new-site && ls -la /opt/data/cemex-content/new-site/
+total 321
+drwxr-xr-x 17 hermes hermes   1024 Jun 21 14:55 .
+drwx------ 35 hermes hermes   4096 Jun 21 14:55 ..
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 00_Public_Legal_Brief
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 02_Nonconforming_Use_Evidence
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 03_State_Mining_Permit_M1977208
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 04_Dowe_Flats_M1993041
+drwxr-xr-x  4 hermes hermes   1024 Jun 21 14:21 05_Air_Quality_Permit_95OPBO082
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 06_Boulder_County_Land_Use
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 07_EPA_Clean_Air_Act_Case
+drwxr-xr-x  3 hermes hermes   1024 Jun 21 14:21 08_Operational_History_and_Traffic
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 09_Correspondence
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 11_Reference_and_Research
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 12_Presentations
+-rw-r--r--  1 hermes hermes    468 Jun 21 14:21 CONTRIBUTING.md
+-rw-r--r--  1 hermes hermes 133406 Jun 21 14:21 INDEX.csv
+-rw-r--r--  1 hermes hermes  65822 Jun 21 14:21 INDEX.md
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 Images
+-rw-r--r--  1 hermes hermes   2950 Jun 21 14:21 README.md
+-rw-r--r--  1 hermes hermes  37609 Jun 21 14:21 TIMELINE.md
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 Z_Related_Other_CEMEX_Mines
+drwxr-xr-x  2 hermes hermes   1024 Jun 21 14:21 _Not_Relevant
+-rw-------  1 hermes hermes  11614 Jun 21 14:32 boa-research.md
+-rw-------  1 hermes hermes   2486 Jun 21 14:55 build-site-v2.sh
+-rw-------  1 hermes hermes   1866 Jun 21 14:34 build-site.sh
+-rw-------  1 hermes hermes   9322 Jun 21 14:54 build-spec-v2.md
+-rw-------  1 hermes hermes   9192 Jun 21 14:34 build-spec.md
+-rw-r--r--  1 hermes hermes    893 Jun 21 14:21 filelist.txt
+drwxr-xr-x  3 hermes hermes   1024 Jun 21 14:55 new-site
+-rw-------  1 hermes hermes  26642 Jun 21 14:27 website-content.txt
+total 84
+drwxr-xr-x  3 hermes hermes  1024 Jun 21 14:55 .
+drwxr-xr-x 17 hermes hermes  1024 Jun 21 14:55 ..
+drwxr-xr-x  8 hermes hermes  1024 Jun 21 14:43 .git
+-rw-r--r--  1 hermes hermes    68 Jun 21 14:55 build-v2.log
+-rw-r--r--  1 hermes hermes 14528 Jun 21 14:40 build.log
+-rw-r--r--  1 hermes hermes 66096 Jun 21 14:39 index.html
+[0m
+[0m→ [0mRead new-site/index.html[90m [limit=5][0m
+Now I'll build the complete site. I'll craft the Letter as the emotional heart.
+[0m
+[0m← [0mWrite new-site/index.html
+Wrote file successfully.
+[0m
+[0m$ [0mls -la /opt/data/cemex-content/new-site/index.html && echo "---" && wc -l /opt/data/cemex-content/new-site/index.html && echo "---" && grep -c "<section" /opt/data/cemex-content/new-site/index.html
+-rw-r--r-- 1 hermes hermes 40442 Jun 21 15:01 /opt/data/cemex-content/new-site/index.html
+---
+560 /opt/data/cemex-content/new-site/index.html
+---
+7
+[0m
+Built `/opt/data/cemex-content/new-site/index.html` — **40,442 bytes**, 560 lines, 7 sections.
+
+Highlights:
+- **The Letter** is the emotional heart — written as an open letter to Boulder County, with the "We came here because we believed…" → "if not us, who?" arc, set on cream paper with quotation-mark flourishes and italic Playfair pull quotes.
+- Hero uses the misty Colorado sunrise image with a warm golden-hour overlay; headline breaks "Let's Protect It." onto an italic gold line.
+- Sticky frosted-navy nav + full-screen mobile hamburger menu (900px breakpoint).
+- Evidence stat cards animate up from 0% on scroll (700%, $3.5M, 7%, 55).
+- Donation ask is **$26/month** (per spec — "less than $1/day"); framed as tax-deductible via SOSVV 501(c)(3).
+- BOA section lists Marlett (Chair), Campbell (Vice Chair), Ott; cppfrontdesk@bouldercounty.gov · 303-441-3930 · ZON-23-0003; "Appeal filed before June 18, 2026."
+- Footer links to github.com/lorangb/cemex-nonconforming and carries the closing line "We came here because we believed. We stay because we still do."
+- Back-to-top button, smooth scroll, IntersectionObserver reveal-on-scroll, responsive at 900/768/480.
+
+One note on the donation amount: the spec and your message differed — spec says **$26/month** ("less than $1/day"), which I used. If you actually want a different figure, say the word and I'll swap it.

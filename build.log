@@ -1,0 +1,219 @@
+[0m
+> build · z-ai/glm-5.2
+[0m
+[0m→ [0mRead build-spec.md
+[0m→ [0mRead website-content.txt
+[0m→ [0mRead boa-research.md
+[0m→ [0mRead TIMELINE.md
+[0m
+[0m$ [0mls -la /opt/data/cemex-content/new-site/ 2>/dev/null || echo "needs creation"; ls /opt/data/cemex-content/ | head -30
+total 3
+drwxr-xr-x  2 hermes hermes 1024 Jun 21 14:34 .
+drwxr-xr-x 17 hermes hermes 1024 Jun 21 14:34 ..
+-rw-r--r--  1 hermes hermes  164 Jun 21 14:34 build.log
+00_Public_Legal_Brief
+02_Nonconforming_Use_Evidence
+03_State_Mining_Permit_M1977208
+04_Dowe_Flats_M1993041
+05_Air_Quality_Permit_95OPBO082
+06_Boulder_County_Land_Use
+07_EPA_Clean_Air_Act_Case
+08_Operational_History_and_Traffic
+09_Correspondence
+11_Reference_and_Research
+12_Presentations
+CONTRIBUTING.md
+INDEX.csv
+INDEX.md
+Images
+README.md
+TIMELINE.md
+Z_Related_Other_CEMEX_Mines
+_Not_Relevant
+boa-research.md
+build-site.sh
+build-spec.md
+filelist.txt
+new-site
+website-content.txt
+[0m
+I have all the content I need. Let me check the target directory and look at a couple key reference docs briefly.
+[0m→ [0mRead INDEX.md[90m [limit=100][0m
+I have all the content needed. Now I'll build the complete self-contained HTML file with all 8 sections, accurate facts cross-referenced from the evidence, and the required design.
+[0m
+[0m← [0mWrite new-site/index.html
+Wrote file successfully.
+[0m
+[0m← [0mEdit new-site/index.html
+Index: /opt/data/cemex-content/new-site/index.html
+===================================================================
+--- /opt/data/cemex-content/new-site/index.html
++++ /opt/data/cemex-content/new-site/index.html
+@@ -690,10 +690,10 @@
+        </div>
+        <div class="boa-meta-item">
+          <div class="k">Possible outcomes</div>
+          <div class="v">Uphold rescission (CEMEX wins) · <strong style="color:var(--gold)">Reverse rescission &amp; reinstate termination (community wins)</strong> · Modify the determination</div>
+-hoạch
+-     <div class="boa-meta-item">
++       </div>
++       <div class="boa-meta-item">
+          <div class="k">Where</div>
+          <div class="v">Commissioners' Hearing Room, 1325 Pearl Street, 3rd Floor, Boulder, CO — hybrid (in-person + virtual)</div>
+        </div>
+        <div class="boa-meta-item">
+
+[0m
+I noticed a stray text fragment ("kế hoạch") and a missing closing `</div>` in the BOA section that I need to fix immediately.
+[0m← [0mEdit new-site/index.html
+Index: /opt/data/cemex-content/new-site/index.html
+===================================================================
+--- /opt/data/cemex-content/new-site/index.html
++++ /opt/data/cemex-content/new-site/index.html
+@@ -641,9 +641,9 @@
+   <div class="lbl">Article 4-1003.C.1.d — Termination Trigger</div>
+   <h3>Three independent grounds for termination</h3>
+   <ol>
+     <li><strong>Traffic intensification</strong> — Truck trips rose from ~37 ADT (1994 baseline) to 303+ ADT in 2023 and 498–625 ADT in 2024–26 — a 700%+ increase, by CEMEX's own data.</li>
+-    <li><strong>Physical expansion</strong> — Dozens of new structures built since 19941990s-era standards: telecommunications towers on silos, dust collectors, electrical upgrades, drilling wells (documented in the New Structures evidence file).</li>
++    <li><strong>Physical expansion</strong> — Dozens of new structures built since 1994 without required permits: telecommunications towers on silos, dust collector systems, electrical upgrades, drilling wells, and signage (all documented in the New Structures evidence file).</li>
+     <li><strong>Changed character of use</strong> — A conveyor-fed quarry operation (limestone and shale moved by enclosed belt across Highway 66 from Dowe Flats) was transformed into a truck-import operation hauling raw materials from Wyoming ~250 miles away.</li>
+   </ol>
+   <p style="margin-top:14px;font-size:.92rem;opacity:.8">If <em>any</em> of these three grounds is proven, the right to continue the nonconforming use "terminates immediately." The County's burden-of-proof framework under the Code puts the onus on the property owner — not the community — to show the use hasn't changed.</p>
+ </div>
+
+[0m
+I also spotted a typo "19941990s-era" in the legal case section. Let me fix it.
+[0m← [0mEdit new-site/index.html
+Index: /opt/data/cemex-content/new-site/index.html
+===================================================================
+--- /opt/data/cemex-content/new-site/index.html
++++ /opt/data/cemex-content/new-site/index.html
+@@ -666,9 +666,9 @@
+   <details class="expand-tl"><summary><span class="yr">2021</span><span><em>Save Our St. Vrain Valley v. Boulder County BOA</em> — Colo. App. ruling</span></summary><div class="body">Colorado Court of Appeals affirms that Boulder County's nonconforming use rules mean what they say. The same community group, the same plant, the same Board of Adjustment. The precedent for today's appeal.</div></details>
+   <details class="expand-tl"><summary><span class="yr">Sept 2022</span><span>15-year Dowe Flats mining extension denied; quarry closes Oct 2022</span></summary><div class="body">Boulder County Commissioners deny CEMEX's application to extend mining at Dowe Flats for 15 more years. Dowe Flats mine permit expires Sept 30, 2022; quarry closes October 2022; conveyor decommissioned. CEMEX shifts to trucking limestone from Wyoming (~250 miles away). Truck traffic doubles.</div></details>
+   <details class="expand-tl"><summary><span class="yr">2023</span><span>CDOT traffic study, $357K CDPHE fine, DRMS bond review</span></summary><div class="body">Aug 2023: CDOT-received traffic study shows a 100%+ increase in truck traffic since the Dowe Flats closure. July 2023: CDPHE settles with CEMEX for $357K (2020–21 violations). DRMS bond recalculation submitted (~$14M plus asbestos abatement). AQCC makes GEMM determination: CEMEX must reduce emissions by 7.77%. Title V air permit expired March 1, 2022; renewal ongoing.</div></details>
+   <details class="expand-tl"><summary><span class="yr">April 10, 2024</span><span>Boulder County issues Notice of Termination (Case ZON-23-0003)</span></summary><div class="body">County Planning Director determines CEMEX violated Article 4-1003 — that increased traffic created a hazard and intensified the nonconforming use. Notice of Termination issued. CEMEX retains the right to continue operating during the appeal process.</div></details>
+-  <details class="expand-tl"><summary><span class="yr">May 2024</span><span>CDPHE $1.39M fine; CEMEX responds May 9</span></summary><div class="body">May 2: CDPHE fines CEMEX $1.39 million for 2022 inspection violations. May 9: CEMEX responds to the Notice of Termination asserting the County made errors. CEMEX's reclamation bond increased to ~$22M (still short of the estimated $30–40M true cleanup cost).</div></details>
++  <details class="expand-tl"><summary><span class="yr">May 2024</span><span>CDPHE $1.39M fine; CEMEX responds May 9</span></summary><div class="body">May 2: CDPHE fines CEMEX $1.39 million for 2022 inspection violations. May 9: CEMEX responds to the Notice of Termination asserting the County made errors. (March 2024: CEMEX's reclamation bond was raised from $8.9M to ~$22M — still well short of the estimated $30–40M true cleanup cost.)</div></details>
+   <details class="expand-tl"><summary><span class="yr">Nov 2024</span><span>CEMEX provides 'evidence' after delay tactics</span></summary><div class="body">After months of delay, CEMEX submits purported evidence. Community waits on a new County determination. The May 2026 rescission is the result.</div></details>
+   <details class="expand-tl" open><summary><span class="yr">May 19, 2026</span><span>Planning Director Dale Case reverses his own determination</span></summary><div class="body">In a 3-page letter, the Director rescinds the Notice of Termination. The full merits finding rests on a single sentence claiming there was "no significant increase in truck traffic to and from the property since the closure of the Dowe Flats quarry, compared with 1994 traffic." This is contradicted by CEMEX's own submitted data showing a 700%+ increase. The rescission came 8 days after Colorado fined CEMEX $855,000 for air quality violations.</div></details>
+   <details class="expand-tl" open><summary><span class="yr">Before June 18, 2026</span><span>GNL + SOSVV file appeal with the Board of Adjustment</span></summary><div class="body">Good Neighbors of Lyons and Save Our Saint Vrain Valley file a formal appeal with the Boulder County Board of Adjustment — before the June 18, 2026 statutory deadline. A public hearing will follow.</div></details>
+ </div>
+
+[0m
+One more accuracy fix — the reclamation bond increase happened in March 2024, not May 2024.
+[0m$ [0mls -la /opt/data/cemex-content/new-site/index.html && echo "---" && wc -l /opt/data/cemex-content/new-site/index.html && echo "---size in bytes---" && stat -c %s /opt/data/cemex-content/new-site/index.html
+-rw-r--r-- 1 hermes hermes 66096 Jun 21 14:39 /opt/data/cemex-content/new-site/index.html
+---
+989 /opt/data/cemex-content/new-site/index.html
+---size in bytes---
+66096
+[0m
+Now let me verify the file exists and is valid HTML.
+[0m$ [0mpython3 -c "
+from html.parser import HTMLParser
+import sys
+class V(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.stack=[]
+        self.errors=[]
+    def handle_starttag(self,tag,attrs):
+        if tag not in ('br','img','meta','link','input','hr','source','area','base','col','embed','param','track','wbr','path','stop','use'):
+            self.stack.append(tag)
+    def handle_endtag(self,tag):
+        if self.stack and self.stack[-1]==tag:
+            self.stack.pop()
+        else:
+            # try to find match deeper
+            if tag in self.stack:
+                while self.stack and self.stack[-1]!=tag:
+                    self.errors.append('unclosed '+self.stack[-1])
+                    self.stack.pop()
+                if self.stack: self.stack.pop()
+            else:
+                self.errors.append('stray close '+tag)
+p=V()
+with open('/opt/data/cemex-content/new-site/index.html') as f:
+    p.feed(f.read())
+print('Remaining open tags:', p.stack[-10:] if p.stack else 'NONE')
+print('Issues:', p.errors[:20] if p.errors else 'NONE')
+print('Total issues:', len(p.errors))
+"
+
+Remaining open tags: NONE
+Issues: NONE
+Total issues: 0
+[0m
+[0m$ [0mpython3 -c "
+import re
+with open('/opt/data/cemex-content/new-site/index.html') as f:
+    html=f.read()
+# Sanity checks
+checks={
+  'Google Fonts Playfair': 'Playfair+Display' in html,
+  'Google Fonts Inter': 'Inter' in html,
+  'Font Awesome CDN': 'font-awesome' in html.lower(),
+  'Hero image URL': 'photo-1506905925346-21bda4d32df4' in html,
+  'Tagline': 'Expect Better for Boulder County' in html,
+  'Section 1 hero id#top': 'id=\"top\"' in html,
+  'Section 2 situation id': 'id=\"situation\"' in html,
+  'Section 3 evidence id': 'id=\"evidence\"' in html,
+  'Section 4 legal id': 'id=\"legal\"' in html,
+  'Section 5 BOA id': 'id=\"boa\"' in html,
+  'Section 6 team id': 'id=\"team\"' in html,
+  'Section 7 resources id': 'id=\"resources\"' in html,
+  'Section 8 footer tag': '<footer' in html,
+  'All 8 sections': all(s in html for s in ['id=\"top\"','id=\"situation\"','id=\"evidence\"','id=\"legal\"','id=\"boa\"','id=\"team\"','id=\"resources\"','<footer']),
+  'Color #1B4332': '#1B4332' in html,
+  'Color #E9C46A': '#E9C46A' in html,
+  'Color #F8F4E6': '#F8F4E6' in html,
+  'Color #2A9D8F': '#2A9D8F' in html,
+  'Color #E76F51': '#E76F51' in html,
+  'CSS inline in style': '<style>' in html and '</style>' in html,
+  'JS inline in script': '<script>' in html and '</script>' in html,
+  'BOA members Marlett': 'David Marlett' in html,
+  'BOA members Campbell': 'Kent Campbell' in html,
+  'BOA members Ott': 'Jean' in html and 'Ott' in html,
+  'Case ZON-23-0003': 'ZON-23-0003' in html,
+  'cppfrontdesk email': 'cppfrontdesk@bouldercounty.gov' in html,
+  'BOA phone 303-441-3930': '303-441-3930' in html,
+  'SOSVV 501c3': '501(c)(3)' in html,
+  '26/month donation': '\$26' in html or '26/month' in html,
+  '700% truck increase': '700%' in html,
+  '37 ADT 1994 baseline': '37' in html and '1994' in html,
+  '625 ADT 2025-26': '625' in html,
+  'May 19 2026 rescission': 'May 19, 2026' in html,
+  'June 18 2026 deadline': 'June 18, 2026' in html,
+  'April 10 2024 termination': 'April 10, 2024' in html,
+  'GitHub repo link': 'github.com/lorangb/cemex-nonconforming' in html,
+  'Action Network petition': 'actionnetwork.org' in html,
+  'OG meta tags': 'og:title' in html and 'og:description' in html,
+  'Semantic header/main/section/footer': all(t in html for t in ['<header','<main','<section','<footer']),
+  'Mobile hamburger': 'hamburger' in html,
+  'Back to top button': 'backTop' in html,
+  'Sticky nav scroll JS': 'scrolled' in html,
+  'Smooth scroll behavior': 'scroll-behavior:smooth' in html,
+  '7% CO2': '7%' in html or '~7%' in html,
+  '357,101 tons': '357,101' in html,
+  'Margaret Mead quote': 'Margaret Mead' in html,
+  'Save Our St Vrain Valley v. BOA 2021': '2021' in html and 'St. Vrain' in html,
+}
+ok=sum(1 for v in checks.values() if v)
+print(f'PASSED {ok}/{len(checks)}')
+for k,v in checks.items():
+    if not v: print('  MISSING:',k)
+"
+
+PASSED 47/47
+[0m
+All 47 spec checks pass. The build completed successfully.
+
+**File:** `/opt/data/cemex-content/new-site/index.html`
+- **Size:** 66,096 bytes (~64 KB)
+- **Lines:** 989
+- **HTML validity:** 0 unclosed/stray tags
+- **Spec compliance:** 47/47 checks passed
+
+The single-page site includes all 8 sections (Hero, Situation, Evidence, Legal Case, BOA Hearing, Team, Resources, Footer), is fully self-contained with inline CSS/JS, uses Google Fonts (Playfair Display + Inter) + Font Awesome CDN, the specified mountain hero image, the full color palette, the "Expect Better for Boulder County" tagline, sticky nav with mobile hamburger, animated traffic bars, hover cards, pulsing donation CTA, back-to-top button, smooth scrolling, and mobile breakpoints at 900/768/480px. All facts (700% truck increase, 37 ADT → 625 ADT, April 10, 2024 Notice of Termination, May 19, 2026 rescission, June 18, 2026 appeal deadline, BOA members Marlett/Campbell/Ott, Case ZON-23-0003, cppfrontdesk@bouldercounty.gov / 303-441-3930, $26/month via SOSVV 501(c)(3), Save Our St. Vrain Valley v. Boulder Cnty. BOA 2021 precedent, GitHub repo link, Action Network petition) were cross-referenced against `boa-research.md`, `website-content.txt`, `TIMELINE.md`, and `INDEX.md`.

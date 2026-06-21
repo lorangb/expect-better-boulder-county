@@ -65,6 +65,15 @@ nav{position:sticky;top:0;z-index:100;background:rgba(26,26,46,0.92);backdrop-fi
 .hero h1 .accent{color:var(--gold);font-style:italic;display:block;font-weight:700}
 .hero .sub{font-size:clamp(1.05rem,2vw,1.4rem);font-weight:300;max-width:720px;color:rgba(255,255,255,.92);margin-bottom:2.5rem;line-height:1.5}
 .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+
+/* VIDEO SECTION */
+.video-section{padding:5rem 0;background:var(--cream);text-align:center}
+.video-section h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,3rem);color:var(--green);margin-bottom:.75rem;font-weight:800}
+.video-section .video-sub{color:var(--ink);opacity:.75;font-size:1.1rem;margin-bottom:2.5rem}
+.video-wrapper{position:relative;max-width:960px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15);background:#000}
+.video-wrapper video{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.video-caption{margin-top:1.5rem;font-size:.9rem;color:var(--ink);opacity:.6}
+.video-caption a{color:var(--teal);text-decoration:underline}
 .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.8rem;border-radius:999px;font-weight:600;font-size:.95rem;letter-spacing:.02em;cursor:pointer;border:none;transition:transform .2s,box-shadow .2s,background .2s;text-decoration:none}
 .btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,0,0,.25)}
 .btn-primary{background:var(--gold);color:var(--navy)}
@@ -249,6 +258,7 @@ footer .github{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold
     <a href="#hero" class="brand"><img src="https://images.squarespace-cdn.com/content/v1/6299fc89866f6c66caa2011d/055e0e39-173f-43d6-91eb-1280da525a80/Good+Neighbors+Logo%2C+Transparent.png?format=100w" alt="Good Neighbors of Lyons" class="brand-logo"></a>
     <div class="nav-links">
       <a href="#letter">The Letter</a>
+      <a href="#video">The Video</a>
       <a href="#evidence">The Evidence</a>
       <a href="#legal">The Law</a>
       <a href="#boa">The Hearing</a>
@@ -282,6 +292,21 @@ footer .github{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold
     </div>
   </div>
   <a href="#letter" class="scroll-cue" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section" id="video">
+  <div class="container">
+    <h2>Our Story in 30 Seconds</h2>
+    <p class="video-sub">The foothills. The plant. The fight. Watch and share.</p>
+    <div class="video-wrapper reveal">
+      <video controls playsinline preload="metadata" poster="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200">
+        <source src="resources/campaign-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+    <p class="video-caption">Made with &#9829; by Good Neighbors of Lyons &middot; <a href="#help">Join the fight</a></p>
+  </div>
 </section>
 
 <!-- LETTER (the emotional heart) -->
