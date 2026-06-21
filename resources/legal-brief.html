@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reverse the Rescission — Terminate CEMEX Lyons' Nonconforming Use (Public Legal Brief)</title>
+<style>
+  :root{
+    --slate:#23282D; --slate2:#2E353C; --ink:#1B1F23; --muted:#5B6770;
+    --paper:#FFFFFF; --paper2:#F3F5F6; --line:#DCE1E4;
+    --ochre:#C8A23C; --ochre-d:#9C7E26; --vrain:#3E6E78; --vrain-d:#2C5059;
+    --good:#3C7D5A; --bad:#B5462F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:#0c0e10;color:var(--ink);font-family:Calibri,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .deck{max-width:1180px;margin:0 auto;padding:24px 16px 80px}
+  .slide{position:relative;aspect-ratio:16/9;background:var(--paper);border-radius:14px;overflow:hidden;
+    margin:0 0 26px;box-shadow:0 14px 40px rgba(0,0,0,.45);display:flex;flex-direction:column}
+  .pad{padding:48px 58px}
+  h1,h2,h3{font-family:Cambria,"Century Schoolbook",Georgia,serif;line-height:1.08}
+  .eyebrow{font-family:Calibri,Arial,sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:13px;color:var(--ochre-d)}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;
+    background:var(--ochre);color:#1d1a0e;font-family:Cambria,serif;font-weight:700;font-size:19px;flex:none}
+  .title h1{font-size:56px;color:var(--paper)}
+  .slide.dark{background:linear-gradient(135deg,var(--slate) 0%,var(--slate2) 100%);color:#EDF1F3}
+  .slide.dark h1,.slide.dark h2,.slide.dark h3{color:#fff}
+  .slide.dark .muted{color:#AEB9C0}
+  .slide.vrain{background:linear-gradient(135deg,var(--vrain-d),var(--vrain));color:#F2F8F9}
+  .slide.vrain h2{color:#fff}
+  h2.head{font-size:33px;color:var(--ink);margin:6px 0 0}
+  .muted{color:var(--muted)}
+  .lead{font-size:20px;line-height:1.5;color:#2b3137;max-width:62ch}
+  .row{display:flex;gap:26px}
+  .col{flex:1}
+  ul.clean{list-style:none}
+  ul.clean li{position:relative;padding:8px 0 8px 28px;font-size:16.5px;line-height:1.4;border-bottom:1px solid var(--line)}
+  ul.clean li:last-child{border-bottom:0}
+  ul.clean li::before{content:"";position:absolute;left:4px;top:16px;width:9px;height:9px;border-radius:2px;background:var(--ochre)}
+  .card{background:var(--paper2);border-radius:12px;padding:18px 20px}
+  .card h3{font-size:18px;margin-bottom:6px;color:var(--ink)}
+  .card p{font-size:14.5px;line-height:1.45;color:#3c444b}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+  .stat{font-family:Cambria,serif;font-weight:700;font-size:54px;line-height:1;color:var(--vrain)}
+  .stat.ochre{color:var(--ochre-d)} .stat.bad{color:var(--bad)} .stat.good{color:var(--good)}
+  .stat small{display:block;font-family:Calibri,sans-serif;font-weight:400;font-size:14px;color:var(--muted);margin-top:8px;line-height:1.35}
+  .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);
+    border-top:1px solid var(--line);padding-top:12px}
+  .slide.dark .foot,.slide.vrain .foot{color:#9fb0b8;border-top-color:rgba(255,255,255,.18)}
+  .tl .item{display:grid;grid-template-columns:104px 1fr;gap:14px;padding:7px 0;border-bottom:1px solid var(--line)}
+  .tl .yr{font-family:Cambria,serif;font-weight:700;color:var(--ochre-d);font-size:15px}
+  .tl .ev{font-size:14px;line-height:1.32;color:#343b41}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;color:#fff;background:var(--vrain);border-radius:4px;padding:2px 7px;margin-left:4px;vertical-align:middle}
+  .tag.bad{background:var(--bad)} .tag.good{background:var(--good)}
+  .quote{font-family:Cambria,serif;font-size:20px;line-height:1.42;color:#fff}
+  .src{font-size:12px;line-height:1.5;color:#3c444b}
+  .src b{color:var(--ink)}
+  .kicker{font-size:17px;line-height:1.5;color:#EDF1F3;max-width:72ch}
+  .navhint{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);background:#1a1d20;color:#9fb0b8;
+    font-family:Calibri,sans-serif;font-size:12px;padding:7px 14px;border-radius:20px;opacity:.85;z-index:10}
+  .two-bad-good{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:12px;overflow:hidden}
+  .tbg-l{background:#FBEEEA;padding:18px 20px} .tbg-r{background:#EAF3EE;padding:18px 20px}
+  .tbg-l h3{color:var(--bad)} .tbg-r h3{color:var(--good)}
+  .tbg-l p,.tbg-r p{font-size:14px;line-height:1.45;color:#36404a;margin-top:4px}
+  .big-arrow{display:flex;align-items:center;gap:14px;margin-top:6px}
+  .chip{background:var(--paper2);border-radius:10px;padding:12px 16px;text-align:center;flex:1}
+  .chip .n{font-family:Cambria,serif;font-weight:700;font-size:30px;color:var(--ink)}
+  .chip.bad .n{color:var(--bad)} .chip .l{font-size:12px;color:var(--muted);margin-top:2px}
+  .arr{font-size:30px;color:var(--ochre);font-weight:700}
+  @media print{
+    html,body{background:#fff}
+    .deck{max-width:none;margin:0;padding:0}
+    .slide{margin:0;border-radius:0;box-shadow:none;page-break-after:always;width:100%;aspect-ratio:auto;height:100vh}
+    .navhint{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+<!-- 1 TITLE -->
+<section class="slide dark title">
+  <div class="pad" style="display:flex;flex-direction:column;height:100%">
+    <div class="eyebrow">Public Legal Brief · Boulder County, Colorado</div>
+    <div style="margin-top:auto">
+      <h1>Reverse the Rescission</h1>
+      <p class="kicker" style="margin-top:16px;max-width:64ch">The case to reinstate Boulder County's termination of CEMEX Lyons' nonconforming use — because truck traffic on Highway 66 has roughly <b>doubled</b> and now vastly exceeds the 1994 baseline the County is frozen to.</p>
+    </div>
+    <div class="foot">
+      <span>Good Neighbors of Lyons · Save Our St. Vrain Valley</span>
+      <span>Prepared for the Boulder County Board of Adjustment &amp; the public</span>
+    </div>
+  </div>
+</section>
+
+<!-- 2 THE ASK -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div style="display:flex;gap:16px;align-items:center"><span class="num">!</span>
+      <div><div class="eyebrow">What we are asking</div><h2 class="head">The relief sought</h2></div></div>
+    <div class="row" style="margin-top:22px">
+      <div class="col">
+        <ul class="clean">
+          <li><b>Reverse</b> Director Dale Case's <b>May 2026 rescission</b> of the Notice of Termination of Nonconforming Status.</li>
+          <li><b>Reinstate</b> the County's own <b>April 10, 2024 Notice of Termination</b> — which correctly found that increased truck traffic intensified and unlawfully enlarged the nonconforming use.</li>
+          <li>The rescission rests on a <b>false factual premise</b> about 1994 traffic. Correct the record, and the termination stands.</li>
+        </ul>
+      </div>
+      <div class="col" style="max-width:330px">
+        <div class="card" style="background:var(--slate);color:#EDF1F3">
+          <h3 style="color:#fff">The County got it right the first time</h3>
+          <p style="color:#cdd6db">In April 2024 Boulder County determined the plant had forfeited its grandfathered status. The May 2026 rescission reversed that — on evidence that doesn't hold up.</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot"><span>Good Neighbors of Lyons · Save Our St. Vrain Valley</span><span>Slide 2</span></div>
+  </div>
+</section>
+
+<!-- 3 EXEC SUMMARY -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">In one minute</div><h2 class="head">Why the rescission must fall</h2>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card"><h3>1 · The County found a violation</h3><p>April 2024: the Director found that surging truck traffic "expanded CEMEX operations," terminating the nonconforming use.</p></div>
+      <div class="card"><h3>2 · CEMEX hid the baseline</h3><p>Its Landis traffic report omits the 1994 data — then claims today's traffic is no greater than 1994.</p></div>
+      <div class="card"><h3>3 · 1994 was locally supplied</h3><p>In 1994 raw materials predominantly came from local/on-site sources, not offsite trucking.</p></div>
+      <div class="card"><h3>4 · So the increase is real</h3><p>With the Dowe Flats quarry closed, everything is now trucked over Highway 66. The premise of the rescission is false — reverse it.</p></div>
+    </div>
+    <div class="foot"><span>Good Neighbors of Lyons · Save Our St. Vrain Valley</span><span>Slide 3</span></div>
+  </div>
+</section>
+
+<!-- 4 BACKGROUND -->
+<section class="slide vrain">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow" style="color:#bfe2e6">The place &amp; the baseline</div><h2 class="head">A 1969 plant, frozen to its 1994 scope</h2>
+    <div class="row" style="margin-top:20px">
+      <div class="col"><ul class="clean" style="color:#eaf6f7">
+        <li style="border-color:rgba(255,255,255,.18)">The Lyons cement plant was built in <b>1969</b>; the Boulder County Land Use Code was adopted in <b>1994</b>, making the plant a legal <b>nonconforming (grandfathered)</b> use on ~866 acres now zoned <b>Agricultural</b>.</li>
+        <li style="border-color:rgba(255,255,255,.18)">In the 1994 baseline, raw materials were supplied <b>locally/on-site</b> plus de minimis hauling from the Larimer County quarry — minimal Highway 66 truck traffic. (The Dowe Flats conveyor across the highway was <b>approved June 1994 but not completed until 1997</b>.)</li>
+        <li style="border-color:rgba(255,255,255,.18)">Highway 66 (Ute Highway) is a <b>prime tourist route to Estes Park and Rocky Mountain National Park</b>, ~20 miles away.</li>
+      </ul></div>
+      <div class="col" style="max-width:320px"><div class="card" style="background:rgba(255,255,255,.12);color:#fff">
+        <h3 style="color:#fff">The rule</h3>
+        <p style="color:#e8f4f5;font-size:14px">A nonconforming use may continue <i>as it existed in 1994</i> — but may not be enlarged or intensified. The legal question is always: <b>how does today compare to 1994?</b></p>
+      </div></div>
+    </div>
+    <div class="foot" style="color:#bcd6da"><span>Sources: Boulder County; Good Neighbors of Lyons timeline; EPA/DOJ record</span><span>Slide 4</span></div>
+  </div>
+</section>
+
+<!-- 5 THE STORY -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">How we got here</div><h2 class="head">From conveyor to convoy — and a reversal</h2>
+    <div class="tl" style="margin-top:14px">
+      <div class="item"><span class="yr">2022 · May</span><span class="ev">CEMEX seeks a 15-year Dowe Flats mining extension (with a ~$15M package to the County). <b>Denied</b> by the Commissioners that September.</span></div>
+      <div class="item"><span class="yr">2022 · Oct</span><span class="ev"><b>Dowe Flats quarry closes.</b> The conveyor supply ends — CEMEX begins trucking raw materials in over Highway 66; daily truck trips roughly double. <span class="tag bad">the trigger</span></span></div>
+      <div class="item"><span class="yr">2023</span><span class="ev">GNL files complaints (the ZON-23-0003 matter). A CDOT-required traffic study confirms a <b>~100% increase</b> in truck traffic.</span></div>
+      <div class="item"><span class="yr">2024 · Mar–Apr</span><span class="ev">County rezones the parcel to <b>Agricultural</b>; then issues a <b>Notice of Termination of Nonconforming Status</b> (Apr 10, 2024). <span class="tag good">County finds the violation</span></span></div>
+      <div class="item"><span class="yr">2024 · Nov</span><span class="ev">CEMEX submits its evidence of "error" — the <b>Landis traffic report</b>.</span></div>
+      <div class="item"><span class="yr">2026 · May</span><span class="ev">Director Case <b>rescinds</b> the Notice of Termination, reinstating CEMEX. <span class="tag bad">the rescission we appeal</span></span></div>
+    </div>
+    <div class="foot"><span>Sources: Boulder County news &amp; letters; CDOT study; GNL timeline; BizWest (May 2024)</span><span>Slide 5</span></div>
+  </div>
+</section>
+
+<!-- 6 LEGAL STANDARD -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div style="display:flex;gap:16px;align-items:center"><span class="num">§</span>
+      <div><div class="eyebrow">The governing standard</div><h2 class="head">When a nonconforming use is terminated</h2></div></div>
+    <p class="lead" style="margin-top:16px">Boulder County's Land Use Code terminates nonconforming status upon any —</p>
+    <div class="card" style="margin-top:12px;background:var(--paper2)">
+      <p style="font-family:Cambria,serif;font-size:18.5px;line-height:1.4;color:#2b3137">"enlargement or alteration of the nonconforming use which has the effect … of creating a hazard or nuisance on or off the property, of adversely affecting the character of the neighborhood, or of <b>intensifying the use of the land or its need for services</b>."</p>
+    </div>
+    <p class="muted" style="margin-top:14px;font-size:15px">The County applied exactly this standard in April 2024. The doubling of truck traffic is an enlargement/intensification — and a Highway 66 safety hazard — that forfeits the grandfathered status.</p>
+    <div class="foot"><span>Boulder County Land Use Code, Article 4 (nonconforming uses) — in repo §06</span><span>Slide 6</span></div>
+  </div>
+</section>
+
+<!-- 7 COUNTY ALREADY FOUND IT -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">April 10, 2024 — the determination being undone</div><h2 class="head">The County already found the violation</h2>
+    <div class="row" style="margin-top:16px">
+      <div class="col">
+        <p class="quote" style="color:#2b3137;font-family:Cambria,serif;font-size:19px;line-height:1.4">"After a thorough investigation, we have determined that <b>additional traffic at the plant has expanded CEMEX operations</b>." <span style="font-size:14px;color:var(--muted)">— Director Dale Case, April 2024</span></p>
+        <ul class="clean" style="margin-top:14px">
+          <li>The increase "constitutes an enlargement or alteration of the nonconforming use… intensifying the use of the land and its need for services."</li>
+          <li>The County found a <b>safety hazard</b> for vehicles entering/exiting onto Highway 66 (CDOT later imposed left-turn restrictions).</li>
+        </ul>
+      </div>
+      <div class="col" style="max-width:340px">
+        <div class="big-arrow">
+          <div class="chip"><div class="n">&lt;600</div><div class="l">avg. daily trips<br>June 2022</div></div>
+          <div class="arr">→</div>
+          <div class="chip bad"><div class="n">~1,300</div><div class="l">avg. daily trips<br>June 2023</div></div>
+        </div>
+        <p class="src" style="margin-top:14px"><b>~100% increase</b>, confirmed by the CDOT-required traffic study (Aug 2023). Source: Boulder County's April 2024 letter; CDOT study (repo §08).</p>
+      </div>
+    </div>
+    <div class="foot"><span>Sources: Boulder County determination letter (Apr 2024); BizWest (May 10, 2024)</span><span>Slide 7</span></div>
+  </div>
+</section>
+
+<!-- 8 THE FALSE PREMISE -->
+<section class="slide dark">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column;justify-content:center">
+    <div class="eyebrow">The centerpiece</div>
+    <h1 style="font-size:38px;margin-top:12px;max-width:26ch">The rescission rests on one claim — that today's traffic is no greater than 1994.</h1>
+    <p class="kicker" style="margin-top:16px">That claim is false, for three reasons the record makes plain:</p>
+    <div class="grid3" style="margin-top:18px">
+      <div class="card" style="background:rgba(255,255,255,.10);color:#EDF1F3"><h3 style="color:#fff">1 · 1994 wasn't truck-fed</h3><p style="color:#cdd6db">Raw materials were local/on-site — not trucked.</p></div>
+      <div class="card" style="background:rgba(255,255,255,.10);color:#EDF1F3"><h3 style="color:#fff">2 · Landis omits 1994</h3><p style="color:#cdd6db">CEMEX's study hides the baseline it claims to match.</p></div>
+      <div class="card" style="background:rgba(255,255,255,.10);color:#EDF1F3"><h3 style="color:#fff">3 · The tonnage proves it</h3><p style="color:#cdd6db">GNL's 1994 data can't support today's trucking.</p></div>
+    </div>
+    <div class="foot"><span>Good Neighbors of Lyons · Save Our St. Vrain Valley</span><span>Slide 8</span></div>
+  </div>
+</section>
+
+<!-- 9 1994 REALITY -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div style="display:flex;gap:16px;align-items:center"><span class="num">1</span>
+      <div><div class="eyebrow">What 1994 actually looked like</div><h2 class="head">In 1994, the plant barely used Highway 66 for raw materials</h2></div></div>
+    <div class="row" style="margin-top:16px">
+      <div class="col"><ul class="clean">
+        <li>In 1994, raw materials were supplied <b>locally/on-site</b> plus <b>de minimis</b> hauling from CEMEX's Larimer County quarry (M-1977-341). Public-road truck traffic was minimal.</li>
+        <li>The Dowe Flats conveyor across Highway 66 was <b>approved in June 1994 but not completed until 1997</b> — so it wasn't even operating at the baseline, and it later moved material by <b>belt, never by truck</b>.</li>
+        <li>GNL's <b>1994 tonnage data</b> — and the Boulder County Health Department annual reports for 1993 and 1994 (amicus Exhibits A &amp; B) — document volumes that <b>cannot</b> equate to today's truck counts.</li>
+      </ul></div>
+      <div class="col" style="max-width:300px">
+        <div class="card" style="background:var(--paper2)"><h3>Never truck-fed — until 2022</h3><p>From the 1994 baseline through 2022, raw materials came from local/on-site sources and then (after 1997) a conveyor — <b>never by truck</b>. Truck-hauling over Highway 66 is a 2022 change in how the plant operates.</p></div>
+      </div>
+    </div>
+    <div class="foot"><span>Exhibits: GNL 1994 tonnage data; BoCo Health Dept. Annual Reports 1993 &amp; 1994 (repo §08, 1994 Operational Baseline)</span><span>Slide 9</span></div>
+  </div>
+</section>
+
+<!-- 10 LANDIS OMITS -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div style="display:flex;gap:16px;align-items:center"><span class="num">2</span>
+      <div><div class="eyebrow">CEMEX's evidence, examined</div><h2 class="head">The Landis report omits 1994 — and doesn't add up</h2></div></div>
+    <div class="two-bad-good" style="margin-top:18px">
+      <div class="tbg-l"><h3>What CEMEX submitted</h3>
+        <p>The Landis traffic report (Ex. D, Nov 2024) is CEMEX's "evidence of error" — the basis for the rescission. It argues current truck traffic is consistent with the historical, grandfathered operation.</p></div>
+      <div class="tbg-r"><h3>The fatal gap</h3>
+        <p>It <b>omits the 1994 tonnage and traffic data entirely.</b> You cannot prove "no increase since 1994" with a study that never shows 1994. GNL's tonnage data fills that gap — and refutes the conclusion.</p></div>
+    </div>
+    <p class="muted" style="margin-top:16px;font-size:15px">Beyond hiding the baseline, GNL's review identifies <b>factual errors, mathematical errors, and arbitrary statistical choices</b> in the Landis report. A study this flawed — and missing 1994 entirely — cannot support reversing the County's determination.</p>
+    <div class="foot"><span>Exhibits: Ex. D Landis Report; Ex. C Stantec Report; GNL rebuttal (repo §08, CEMEX_Responses)</span><span>Slide 10</span></div>
+  </div>
+</section>
+
+<!-- 11 WHY IT EXPLODED -->
+<section class="slide vrain">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div style="display:flex;gap:16px;align-items:center"><span class="num" style="background:#fff;color:var(--vrain-d)">3</span>
+      <div><div class="eyebrow" style="color:#bfe2e6">The increase is structural — and permanent</div><h2 class="head">Why the trucks came: the quarry closed</h2></div></div>
+    <div class="row" style="margin-top:18px">
+      <div class="col"><ul class="clean" style="color:#eaf6f7">
+        <li style="border-color:rgba(255,255,255,.18)">When the County <b>denied</b> the Dowe Flats extension and the quarry <b>closed in October 2022</b>, the conveyor-fed local supply ended.</li>
+        <li style="border-color:rgba(255,255,255,.18)">CEMEX now <b>trucks raw materials in</b> over Highway 66 — which is precisely why daily trips roughly doubled.</li>
+        <li style="border-color:rgba(255,255,255,.18)">This is not "a continuation of historical truck traffic." It is a <b>new, more intensive way of running the plant</b> that did not exist in 1994 — and will not reverse.</li>
+      </ul></div>
+      <div class="col" style="max-width:280px"><div class="stat" style="color:#fff">~2×<small style="color:#dcebec">the daily truck trips after the quarry closed — the very intensification the Code forbids</small></div></div>
+    </div>
+    <div class="foot" style="color:#bcd6da"><span>Sources: CDOT traffic study (Aug 2023); Boulder County determination; GNL timeline</span><span>Slide 11</span></div>
+  </div>
+</section>
+
+<!-- 12 SUPPORTING: STRUCTURES -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">Independent support · A</div><h2 class="head">Decades of physical expansion, too</h2>
+    <div class="row" style="margin-top:14px">
+      <div class="col"><div class="tl">
+        <div class="item"><span class="yr">1997–2001</span><span class="ev">Verizon antennas on silos; telecom sites; Qwest tower (SU-01-0008); new signs</span></div>
+        <div class="item"><span class="yr">2006–08</span><span class="ev">T-Mobile tower; dust collector system; electrical service upgrades</span></div>
+        <div class="item"><span class="yr">2014–15</span><span class="ev">Verizon modifications (BP-14-0801); hazardous-materials locate</span></div>
+        <div class="item"><span class="yr">2022–23</span><span class="ev">New wells drilled; Sept. 2023 visual evidence of added structures</span></div>
+      </div></div>
+      <div class="col" style="max-width:300px"><div class="card"><h3>A second, independent ground</h3><p>Even setting traffic aside, a frozen use cannot keep adding structures. The building-permit record is its own evidence of unlawful enlargement.</p></div></div>
+    </div>
+    <div class="foot"><span>Exhibits: repo §02 / New_Structures (building permits; Sept. 2023 visual evidence)</span><span>Slide 12</span></div>
+  </div>
+</section>
+
+<!-- 13 SUPPORTING: EPA + FINES -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">Independent support · B</div><h2 class="head">A documented pattern of unpermitted intensification</h2>
+    <div class="grid2" style="margin-top:16px">
+      <div class="card"><h3>The 1997–2000 expansion</h3><p>A ~$10.3M "major modification" the EPA found increased NOx, particulates, and SO₂ — done without the required Clean Air Act permits.</p></div>
+      <div class="card"><h3>The penalties</h3><p>Federal consent decree <b>$1M</b> (2013) + SNCR controls; State of Colorado <b>~$600K</b> (2009); CDPHE <b>$357K</b> (2023) and <b>$1.39M</b> (2024) for air-quality violations.</p></div>
+    </div>
+    <p class="muted" style="margin-top:16px;font-size:15px">CEMEX has repeatedly grown and run the plant beyond its permits. The traffic surge is the latest chapter, not an aberration.</p>
+    <div class="foot"><span>Sources: U.S. DOJ/EPA (2013 consent decree); CDPHE settlements; GNL timeline (repo §07, §11)</span><span>Slide 13</span></div>
+  </div>
+</section>
+
+<!-- 14 SUPPORTING: DISCONTINUANCE -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">Independent support · C</div><h2 class="head">The original use also changed character</h2>
+    <div class="row" style="margin-top:14px">
+      <div class="col"><ul class="clean">
+        <li>The original Lyons quarry was wound down and reclaimed — "Disposal of Concrete Rubble and Demolition of Plant" (2003), with reclamation continuing through 2023.</li>
+        <li>Mining shifted to Dowe Flats (M-1993-041) — then ended in 2022. A plant once fed by an on-site, conveyed supply is now an import-and-truck operation.</li>
+      </ul></div>
+      <div class="col" style="max-width:330px"><div class="card" style="background:var(--slate);color:#EDF1F3">
+        <h3 style="color:#fff">The same tension</h3>
+        <p style="color:#cdd6db">CEMEX cannot claim the 1994 use "never changed" to keep its protection while running a materially different, truck-fed operation today.</p>
+      </div></div>
+    </div>
+    <div class="foot"><span>Exhibits: repo §03 (reclamation/demolition), §04 (Dowe Flats M-1993-041)</span><span>Slide 14</span></div>
+  </div>
+</section>
+
+<!-- 15 PRECEDENT -->
+<section class="slide vrain">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow" style="color:#bfe2e6">Precedent in our favor</div><h2 class="head">Save Our St. Vrain Valley v. Boulder County BOA (2021)</h2>
+    <p class="quote" style="margin-top:14px;max-width:62ch">The Court of Appeals held that what counts is activity <b>directly related to the permitted use itself</b> — not ancillary upkeep. Substance over paperwork.</p>
+    <div class="row" style="margin-top:16px">
+      <div class="col"><ul class="clean" style="color:#eaf6f7">
+        <li style="border-color:rgba(255,255,255,.18)">Same valley, same Code, same community group — and a reversal <b>for the citizens</b>.</li>
+        <li style="border-color:rgba(255,255,255,.18)">The Board of Adjustment is the proper forum to review the Director's determination — and to <b>correct it when the law is misapplied</b>, as it was in the rescission.</li>
+      </ul></div>
+      <div class="col" style="max-width:280px"><div class="stat" style="color:#fff">2021<small style="color:#dcebec">Colo. Court of Appeals, Div. I — directly on point</small></div></div>
+    </div>
+    <div class="foot" style="color:#bcd6da"><span>Save Our Saint Vrain Valley, Inc. v. Boulder Cnty. BOA, 19CA2251 (Colo. App. Apr. 1, 2021)</span><span>Slide 15</span></div>
+  </div>
+</section>
+
+<!-- 16 REBUTTALS -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">Anticipating CEMEX</div><h2 class="head">The defenses — and the answers</h2>
+    <div class="grid3" style="margin-top:16px">
+      <div class="card"><h3>"Sierra v. Billingsley"</h3><p>That 2007 case was about whether a 1996 <i>lapse</i> rule applied to a 1990 <i>tire-burning</i> permit — not whether the use was unlawfully enlarged. It doesn't reach intensification.</p></div>
+      <div class="card"><h3>"It's just historical truck traffic"</h3><p>It isn't. The trucks replaced a <b>conveyor</b> that fed the plant in 1994. That's a new mode of operation — the definition of intensification.</p></div>
+      <div class="card"><h3>"Closing us raises housing costs / kills jobs"</h3><p>Real concerns — but not legal answers to enlargement of a nonconforming use. The Code question is intensification vs. 1994, full stop.</p></div>
+    </div>
+    <div class="foot"><span>Sierra Club v. Billingsley, 166 P.3d 309 (Colo. App. 2007); CEMEX public statements (BizWest)</span><span>Slide 16</span></div>
+  </div>
+</section>
+
+<!-- 17 ZONING KICKER -->
+<section class="slide dark">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">The end state the rescission ignores</div><h2 class="head">There is no lawful path back to a cement plant here</h2>
+    <div class="row" style="margin-top:18px">
+      <div class="col"><ul class="clean" style="color:#EDF1F3">
+        <li style="border-color:rgba(255,255,255,.18)">In March 2024 the County <b>rezoned the parcel to Agricultural</b>, where a cement plant is not a permitted use.</li>
+        <li style="border-color:rgba(255,255,255,.18)">Director Case stated CEMEX <b>could not even apply for a Special Use permit</b> to continue operating.</li>
+        <li style="border-color:rgba(255,255,255,.18)">So termination is the lawful end state. The rescission props up an industrial use that has <b>no route to conformity</b> — exactly what the doctrine is meant to wind down.</li>
+      </ul></div>
+      <div class="col" style="max-width:300px"><div class="card" style="background:rgba(255,255,255,.10);color:#EDF1F3"><h3 style="color:#fff">Why it matters</h3><p style="color:#cdd6db">Reinstating the termination doesn't create a new burden — it restores the County's correct application of its own Code.</p></div></div>
+    </div>
+    <div class="foot"><span>Sources: Boulder County rezoning (Mar 2024); Notice of Termination (Apr 2024); GNL timeline</span><span>Slide 17</span></div>
+  </div>
+</section>
+
+<!-- 18 THE RECORD -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">The evidence behind this brief</div><h2 class="head">An open, public, primary-source record</h2>
+    <div class="row" style="margin-top:18px">
+      <div class="col"><ul class="clean">
+        <li><b>600+ primary documents</b> — the County's letters, the CDOT traffic studies, the Landis and Stantec reports, the 1994 baseline exhibits, permits, and the federal case file.</li>
+        <li><b>INDEX.csv</b> catalogs every document; <b>TIMELINE.md</b> lays the history out in order. Anyone can <b>check this brief against the record</b>.</li>
+      </ul></div>
+      <div class="col" style="max-width:300px"><div class="card"><h3>Verify everything</h3><p>Every claim here traces to a dated document or a cited public source. <i>Sunlight is the best disinfectant.</i></p></div></div>
+    </div>
+    <div class="foot"><span>Repository: the public CEMEX-Lyons nonconforming-use case files</span><span>Slide 18</span></div>
+  </div>
+</section>
+
+<!-- 19 RELIEF -->
+<section class="slide">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div style="display:flex;gap:16px;align-items:center"><span class="num">⚖</span>
+      <div><div class="eyebrow">The decision before the Board</div><h2 class="head">What the Board of Adjustment should do</h2></div></div>
+    <div class="grid3" style="margin-top:20px">
+      <div class="card"><h3>1 · Reverse the rescission</h3><p>Set aside the May 2026 rescission as resting on a study that omits the 1994 baseline.</p></div>
+      <div class="card"><h3>2 · Reinstate the termination</h3><p>Restore the April 2024 Notice of Termination — the County's correct finding of intensification.</p></div>
+      <div class="card"><h3>3 · Apply the Code</h3><p>Confirm the nonconforming use is terminated; with Agricultural zoning, there is no Special-Use path back.</p></div>
+    </div>
+    <p class="muted" style="margin-top:16px;font-size:15px">Any one ground — the traffic intensification, the physical expansion, or the changed character of the use — is sufficient.</p>
+    <div class="foot"><span>Good Neighbors of Lyons · Save Our St. Vrain Valley</span><span>Slide 19</span></div>
+  </div>
+</section>
+
+<!-- 20 HOW TO HELP -->
+<section class="slide vrain">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow" style="color:#bfe2e6">You can make the difference</div><h2 class="head">How to help</h2>
+    <div class="grid3" style="margin-top:20px">
+      <div class="card" style="background:rgba(255,255,255,.12);color:#fff"><h3 style="color:#fff">Read the record</h3><p style="color:#e8f4f5">Open the INDEX and TIMELINE; check the 1994 baseline exhibits and the CDOT studies yourself.</p></div>
+      <div class="card" style="background:rgba(255,255,255,.12);color:#fff"><h3 style="color:#fff">Show up</h3><p style="color:#e8f4f5">Attend the Board of Adjustment hearing on the rescission appeal; submit written comment.</p></div>
+      <div class="card" style="background:rgba(255,255,255,.12);color:#fff"><h3 style="color:#fff">Spread the word</h3><p style="color:#e8f4f5">Share this brief and the public repository with neighbors, press, and counsel.</p></div>
+    </div>
+    <div class="foot" style="color:#bcd6da"><span>Good Neighbors of Lyons · Save Our St. Vrain Valley</span><span>Slide 20</span></div>
+  </div>
+</section>
+
+<!-- 21 SOURCES -->
+<section class="slide dark">
+  <div class="pad" style="height:100%;display:flex;flex-direction:column">
+    <div class="eyebrow">Sources &amp; disclaimer</div><h2 class="head">Where this comes from</h2>
+    <div class="row" style="margin-top:16px">
+      <div class="col">
+        <p class="src" style="color:#cdd6db"><b style="color:#fff">Primary record:</b> Boulder County's Notice of Termination (Apr 10, 2024) and the May 2026 rescission; the CDOT-required traffic study (Aug 2023); CEMEX's Landis and Stantec reports (Nov 2024); GNL's 1994 tonnage data and the Boulder County Health Dept. annual reports (1993–1994); building-permit/new-structure exhibits; and the federal Clean Air Act file.</p>
+        <p class="src" style="color:#cdd6db;margin-top:10px"><b style="color:#fff">Law:</b> Boulder County Land Use Code, Article 4 (nonconforming uses). <b style="color:#fff">Cases:</b> <i>Save Our Saint Vrain Valley v. Boulder Cnty. BOA</i>, 19CA2251 (Colo. App. 2021); <i>Sierra Club v. Billingsley</i>, 166 P.3d 309 (Colo. App. 2007). <b style="color:#fff">Federal:</b> <i>United States v. CEMEX, Inc.</i> (Lyons), 2013 consent decree (U.S. DOJ/EPA).</p>
+        <p class="src" style="color:#cdd6db;margin-top:10px"><b style="color:#fff">Reporting:</b> BizWest and Longmont Leader (May 2024); Colorado Sun (May 2024); Good Neighbors of Lyons timeline.</p>
+      </div>
+      <div class="col" style="max-width:300px"><div class="card" style="background:rgba(255,255,255,.10);color:#EDF1F3">
+        <h3 style="color:#fff">Not legal advice</h3>
+        <p style="color:#cdd6db;font-size:14px">A public advocacy synthesis prepared by community members from primary sources. Not legal advice; verify every document and date against the original record before relying on it.</p>
+      </div></div>
+    </div>
+    <div class="foot" style="color:#9fb0b8"><span>Good Neighbors of Lyons · Save Our St. Vrain Valley</span><span>Slide 21</span></div>
+  </div>
+</section>
+
+</div>
+<div class="navhint">← / → to navigate · press your browser's Print → "Save as PDF" for a slide PDF</div>
+<script>
+  const slides=[...document.querySelectorAll('.slide')];let i=0;
+  function go(n){i=Math.max(0,Math.min(slides.length-1,n));slides[i].scrollIntoView({behavior:'smooth',block:'center'});}
+  addEventListener('keydown',e=>{
+    if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();go(i+1);}
+    if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(i-1);}
+    if(e.key==='Home')go(0); if(e.key==='End')go(slides.length-1);
+  });
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting)i=slides.indexOf(en.target);}),{threshold:.6});
+  slides.forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
