@@ -283,7 +283,7 @@ footer .github{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-inner">
-    <span class="badge"><i class="fa-solid fa-gavel"></i> BOA Hearing · Date Pending · Case ZON-23-0003</span>
+    <span class="badge"><i class="fa-solid fa-gavel"></i> BOA Hearing · October 7, 2026 · Case ZON-23-0003</span>
     <h1>We Built This Place.<span class="accent">Let's Protect It.</span></h1>
     <p class="sub">The same spirit that saved our open spaces is needed now. CEMEX Lyons sits in our backyard, and the Board of Adjustment hearing will decide if Boulder County still enforces its own rules.</p>
     <div class="hero-ctas">
@@ -292,6 +292,20 @@ footer .github{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold
     </div>
   </div>
   <a href="#letter" class="scroll-cue" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- COUNTDOWN BANNER -->
+<section style="background:var(--navy);padding:2rem 0;text-align:center;border-top:3px solid var(--gold);border-bottom:3px solid var(--gold)">
+  <div class="container">
+    <p class="eyebrow" style="color:var(--gold);margin-bottom:.5rem">The Hearing is Coming</p>
+    <div style="display:flex;justify-content:center;gap:2rem;flex-wrap:wrap">
+      <div><div id="cnt-days" style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--gold);line-height:1">—</div><div style="color:rgba(255,255,255,.7);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem">Days</div></div>
+      <div><div id="cnt-hours" style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--gold);line-height:1">—</div><div style="color:rgba(255,255,255,.7);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem">Hours</div></div>
+      <div><div id="cnt-minutes" style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--gold);line-height:1">—</div><div style="color:rgba(255,255,255,.7);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem">Minutes</div></div>
+      <div><div id="cnt-seconds" style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:900;color:var(--gold);line-height:1">—</div><div style="color:rgba(255,255,255,.7);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.3rem">Seconds</div></div>
+    </div>
+    <p style="color:rgba(255,255,255,.65);margin-top:.8rem;font-size:.9rem">Board of Adjustment · October 7, 2026 · Case ZON-23-0003</p>
+  </div>
 </section>
 
 <!-- VIDEO -->
@@ -493,7 +507,7 @@ footer .github{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold
     <div class="boa-grid">
       <div class="boa-status reveal">
         <div class="status-row done"><span class="icon"><i class="fa-solid fa-check"></i></span><div><div class="label">Appeal Filed</div><div class="value">Before June 18, 2026 deadline</div></div></div>
-        <div class="status-row urgent"><span class="icon"><i class="fa-solid fa-calendar-day"></i></span><div><div class="label">Hearing Date</div><div class="value">TBD, July or August 2026</div></div></div>
+        <div class="status-row urgent"><span class="icon"><i class="fa-solid fa-calendar-day"></i></span><div><div class="label">Hearing Date</div><div class="value">October 7, 2026 · <span id="countdown-days" style="color:var(--sunset);font-weight:900"></span> days away</div></div></div>
         <div class="status-row"><span class="icon"><i class="fa-solid fa-calendar-week"></i></span><div><div class="label">BOA Schedule</div><div class="value">Meets 1st Wednesdays</div></div></div>
         <div class="status-row urgent"><span class="icon"><i class="fa-solid fa-file-shield"></i></span><div><div class="label">Case Number</div><div class="value">ZON-23-0003</div></div></div>
         <div class="status-row"><span class="icon"><i class="fa-solid fa-envelope"></i></span><div><div class="label">Write the Board</div><div class="value" style="font-size:1rem;font-family:Inter;font-weight:500;word-break:break-all">cppfrontdesk@bouldercounty.gov</div></div></div>
@@ -616,6 +630,17 @@ footer .github{display:inline-flex;align-items:center;gap:.5rem;color:var(--gold
     if(window.scrollY>600){btn.classList.add('show');}else{btn.classList.remove('show');}
   });
   btn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+  // Countdown to Oct 7, 2026
+  var hearingDate=new Date('2026-10-07T09:00:00-06:00').getTime();
+  function tickCountdown(){
+    var now=Date.now(),diff=hearingDate-now;
+    if(diff<=0){document.getElementById('cnt-days').textContent='0';document.getElementById('cnt-hours').textContent='0';document.getElementById('cnt-minutes').textContent='0';document.getElementById('cnt-seconds').textContent='0';return;}
+    var d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
+    document.getElementById('cnt-days').textContent=d;document.getElementById('cnt-hours').textContent=h;document.getElementById('cnt-minutes').textContent=m;document.getElementById('cnt-seconds').textContent=s;
+    var cd=document.getElementById('countdown-days');if(cd)cd.textContent=d;
+  }
+  tickCountdown();setInterval(tickCountdown,1000);
 
   // Reveal on scroll
   var reveals=document.querySelectorAll('.reveal');
